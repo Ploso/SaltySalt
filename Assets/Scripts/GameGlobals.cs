@@ -14,6 +14,9 @@ public class GameGlobals : MonoBehaviour {
 	public static bool rageQuit;
 	public static bool noMoney;
 	public static bool salted;
+	public static bool euphoria;
+
+	public static float points;
 
 	void Start () {
 	
@@ -112,5 +115,35 @@ public class GameGlobals : MonoBehaviour {
 		salted = tempSalted;
 	}
 
+	public static bool GetEuphoria ()
+	{
+		return euphoria;
+	}
+	
+	public static void SetEuphoria (bool tempE)
+	{
+		euphoria = tempE;
+	}
+	
+	public static int GetSeaWater ()
+	{
+		return seaWater;
+	}
+	
+	public static void SetSeaWater (int tempSW)
+	{
+		seaWater = tempSW;
+	}
 
+	public static float GetPoints ()
+	{
+		return points;
+	}
+	
+	public static void SetPoints (float tempP)
+	{
+		points = tempP;
+	}
+
+	
 }
