@@ -29,4 +29,14 @@ public class MainMenu : MonoBehaviour {
 		GameGlobals.SetEuphoria (false);
 		GameGlobals.SetPoints (0);
 	}
+
+	public void InfoScreen()
+	{
+		Application.LoadLevel (3);
+	}
+
+	public void ToTheMainMenu()
+	{
+		Application.LoadLevel (0);
+	}
 }
